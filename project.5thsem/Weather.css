@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #000; /* Default text color to black */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center; /* Center text horizontally */
+    background-color: rgba(0, 0, 0, 0.3); /* Ensure a consistent background color */
+}
+
+/* Remove container styling */
+.weather-app {
+    text-align: center;
+    padding: 30px;
+    width: 90%;
+    max-width: 1200px;
+    background: none; /* Remove container background */
+    box-shadow: none; /* Remove container shadow */
+    border-radius: 0; /* Remove container border radius */
+}
+
+/* Input and Button styling */
+input[type="text"], input[type="number"] {
+    padding: 12px;
+    width: calc(100% - 24px);
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-info {
+    margin-top: 20px;
+}
+
+.temperature-converter {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+#temp-input {
+    width: 120px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+}
+
+#converted-temp {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#weather-forecast {
+    margin-top: 30px;
+    display: flex;
+    overflow-x: auto; /* Ensures horizontal scrolling if necessary */
+    padding: 10px;
+}
+
+.forecast-card {
+    background: rgba(249, 249, 249, 0.9); /* Light background with 90% opacity */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-right: 10px;
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto; /* Prevent shrinking and ensure the card stays in its size */
+}
+
+.forecast-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.forecast-card h3 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.forecast-card p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #333;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Home Page Styles */
+.home-page {
+    background-image: url('W2.jpg'); /* Watermark image for home page */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Ensure a dark overlay for text visibility */
+}
+
+/* Weather Page Styles */
+.weather-page {
+    background-image: url('WH.jpg'); /* Watermark image for weather page */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Ensure a dark overlay for text visibility */
+}
+
+/* Temperature Converter Page Styles */
+.temp-page {
+    background-image: url('Temp.jpg'); /* Watermark image for temperature converter page */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Ensure a dark overlay for text visibility */
+}

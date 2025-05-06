@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="Weather.css">
+</head>
+<body class="temp-page">
+    <div class="weather-app">
+        <h1>Temperature Converter</h1>
+        <button onclick="location.href='home.html'">Home</button>
+        <div class="temperature-converter">
+            <input type="number" id="temp-input" placeholder="Temperature" />
+            <select id="temp-unit">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+            <button onclick="convertTemperature()">Convert</button>
+            <div id="converted-temp"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
